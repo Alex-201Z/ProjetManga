@@ -14,7 +14,7 @@ class MangaController extends Controller
             $mangas = $serviceManga->getMangasAvecNoms();
 
             foreach ($mangas as $manga) {
-                if (!file_exists('assets/images/' . $manga->couverture)) {
+                if (!file_exists('assets\\images\\' . $manga->couverture)) {
                     $manga->couverture = 'erreur.png';
                 }
             }

@@ -13,8 +13,7 @@ class ServiceManga
     {
         try {
             $mangas = DB::table('manga')
-                ->select('id_manga', 'titre', 'prix', 'couverture',
-                    'genre.lib_genre', 'dessinateur.nom_dessinateur', 'scenariste.nom_scenariste')
+                ->select('id_manga', 'titre', 'prix', 'couverture', 'genre.lib_genre', 'dessinateur.nom_dessinateur', 'scenariste.nom_scenariste')
                 ->join('genre', 'genre.id_genre', '=', 'manga.id_genre')
                 ->join('dessinateur', 'dessinateur.id_dessinateur', '=', 'manga.id_dessinateur')
                 ->join('scenariste', 'scenariste.id_scenariste', '=', 'manga.id_scenariste')
