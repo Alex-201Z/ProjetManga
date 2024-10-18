@@ -26,7 +26,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url("/listerMangas") }}">Lister</a></li>
                     <li><a href="{{ url("/") }}">Mangas par genre</a></li>
-                    <li><a href="{{ url("/") }}">Ajouter</a></li>
+                    <li><a href="{{ url("/AjouterManga") }}">Ajouter</a></li>
                 </ul>
             </div>
         </div>
